@@ -28,7 +28,7 @@ with st.container():
    st.write(f'{intRate:.2%}')                                                                                                             # Write Interest rate as %
    loanTerm = st.number_input('Loan term (years)', value=30, key='loan_term')                                                             # Input term of loan
    numPmt = st.number_input('Number of Payments per year', value=12, key='num_pmt')                                                       # Input number of payments per year
-   totPmt = st.number_input('Total Number of Payments',loanTerm * numPmt, key='num_pmt')                                                  # Input total number of payments
+   totPmt = st.number_input('Total Number of Payments',loanTerm * numPmt, key='tot_pmt')                                                  # Input total number of payments
    
    mrgtPmt = np.pmt(intRate/numPmt, totPmt, lnAmt)                                                                                        # Calc the mortgage payment
    totInterest = lnAmt - (-mrgtPmt*totPmt)                                                                                                # Calc total interest
