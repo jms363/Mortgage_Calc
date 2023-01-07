@@ -1,1 +1,1 @@
-numpy-financials
+numpy-financial
